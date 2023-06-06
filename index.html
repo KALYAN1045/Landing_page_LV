@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louis Vuitton(Landing page)</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section>
+    <div class="circle"></div>
+    <header>
+        <a href="index.html"><img src="./images/logo.png" class="logo"></a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Search</a></li>
+            <li><a href="#">Wishlist</a></li>
+        </ul>
+    </header>
+
+    <div class="content">
+        <div class="textBox">
+            <h2>We're in it together<br>We're <span>Louis vuitton</span></h2>
+            <p>We become synonymous with impeccable craftsmanship, timeless style, and the ultimate expression of sophistication. Each Louis Vuitton creation is meticulously crafted by skilled artisans using only the finest materials, ensuring unparalleled quality and durability. Indulge in the allure of Louis Vuitton and discover a world where impeccable style meets unmatched luxury.</p>
+            <a href="#">DISCOVER</a>
+        </div>
+        <div class="imgBox">
+            <img src="./images/watch.png" class="watch">
+        </div>
+    </div>
+    <ul class="thumb">
+        <li><img src="./images/thumb-1.1.png" onclick="imgSlider('./images/watch.png');myFunction3()"></li>
+        <li><img src="./images/thumb-3.3.png" onclick="imgSlider('./images/thumb-3.png');myFunction1()"></li>
+        <li><img src="./images/thumb-2.2.png" onclick="imgSlider('./images/luggage.png');myFunction2()"></li>
+    </ul>
+    <ul class="sci">
+        <li><a href="#"><img src="./images/facebook.png"></a></li>
+        <li><a href="#"><img src="./images/instagram.png"></a></li>
+        <li><a href="#"><img src="./images/twitter.png"></a></li>
+    </ul>
+</section>
+
+<script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.watch').src = anything;
+    }
+    function myFunction1() {
+    document.querySelector('.circle').style.backgroundImage = "url(./images/texture2.jpg)";
+    }
+    function myFunction2() {
+    document.querySelector('.circle').style.backgroundImage = "url(./images/texture3.jpg)";
+    }
+    function myFunction3() {
+    document.querySelector('.circle').style.backgroundImage = "url(./images/texture1.jpg)";
+    }
+</script>
+</body>
+
+</html>
